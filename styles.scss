@@ -1,0 +1,17 @@
+// 1. Importar funciones primero (requerido por variables)
+@import "node_modules/bootstrap/scss/functions";
+
+// 2. Sobrescribir variables de Bootstrap (colores, fuentes, etc.)
+$primary: #e91e63;
+$secondary: #00bcd4;
+$font-family-base: 'Poppins', sans-serif;
+$body-bg: #f0f0f0;
+
+// 3. Importar las variables originales de Bootstrap
+@import "node_modules/bootstrap/scss/variables";
+
+// 4. Importar mapas (usa variables, por eso deben ir después)
+@import "node_modules/bootstrap/scss/maps";
+
+// 5. Finalmente, importar todo Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
